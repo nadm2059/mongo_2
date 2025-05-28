@@ -1,18 +1,92 @@
+/* Global Styles */
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f2f9f8, #d6eaf8);
   padding: 2em;
-  background: #f7f7f7;
+  color: #333;
 }
 
-form {
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2c3e50;
   margin-bottom: 1em;
 }
 
+/* Form Styles */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
 input {
-  padding: 0.5em;
-  width: 200px;
+  padding: 0.5em 1em;
+  width: 250px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #2ecc71;
+  outline: none;
 }
 
 button {
   margin-left: 0.5em;
+  padding: 0.5em 1.2em;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.8em 1em;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+li:hover {
+  border-left-color: #2ecc71;
+}
+
+/* Delete Button */
+li button {
+  background-color: #e74c3c;
+  padding: 0.3em 0.7em;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+li button:hover {
+  background-color: #c0392b;
 }
